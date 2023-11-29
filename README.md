@@ -34,3 +34,30 @@ $ tree
 ```
 
 `.vscode/settings.json`에서 `intelephense` 설정을 추가해서 `volumes/v1/wp`의 폴더를 레퍼런스로 가져올수있도록하였다.
+
+## 워드프레스 테마 설정하기 roots/sage (optional)
+
+```sh
+# 테마 설치
+# https://roots.io/sage/docs/installation/
+composer create-project roots/sage your-theme-name
+# 테마 설치하고 폴더명면 theme로 변경
+mv your-theme-name theme
+# 테마에 들어가서 필수 패키지 설치
+cd your-theme-name
+# https://roots.io/acorn/docs/installation/
+composer require roots/acorn
+yarn install
+```
+
+### typescript 설정하기
+
+```sh
+yarn add @roots/bud-esbuild --save-dev
+```
+
+### sass 설정하기
+
+```sh
+yarn add @roots/bud-sass --save-dev
+```
