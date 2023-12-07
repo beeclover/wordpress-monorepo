@@ -38,7 +38,7 @@ jobs:
 
       # - name: 🔨 (node dependencies) tailwindcss link
       #   run: |
-      #     cd packages/tailwindcss && yarn link && cd ../../theme && yarn link "project-tailwindcss-config"
+      #     cd packages/tailwindcss && yarn link && cd ../../theme && yarn link "@workspaces/project-tailwindcss-config"
   
       - name: 🔨 (node dependencies) monorepo yarn build
         run: |
