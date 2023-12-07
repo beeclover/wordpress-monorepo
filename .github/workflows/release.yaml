@@ -85,6 +85,10 @@ jobs:
         run: |
           yarn install && cd theme && yarn install
 
+      # - name: 🔨 (node dependencies) link
+      #   run: |
+      #     cd packages/tailwindcss && yarn link && cd ../../theme && yarn link "project-tailwindcss-config"
+
       - name: 📦 install, build
         run: |
           yarn build

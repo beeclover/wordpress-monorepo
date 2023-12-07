@@ -18,7 +18,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/index.ts'),
+      entry: path.resolve(__dirname, 'lib/tailwindcss.ts'),
       name,
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => {
