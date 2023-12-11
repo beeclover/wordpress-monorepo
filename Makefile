@@ -1,2 +1,4 @@
-init-tailwindcss:
-	cd packages/tailwindcss && yarn link && cd ../../theme && yarn link "@workspaces/project-tailwindcss-config"
+build:
+	yarn build:sage && yarn lerna run build
+bootstrap:
+	chmod -R 775 bootstrap.sh && sh ./bootstrap.sh
