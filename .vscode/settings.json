@@ -4,18 +4,19 @@
   ],
   "intelephense.environment.phpVersion": "8.1.0",
   "files.associations": { "*.module": "php" },
+  {
   "tailwindCSS.experimental.classRegex": [
-    "tw`([^`]*)", // tw`...`
-    "tw=\"([^\"]*)", // <div tw="..." />
-    "tw={\"([^\"}]*)", // <div tw={"..."} />
-    "tw\\.\\w+`([^`]*)", // tw.xxx`...`
-    "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+    "'class' => '([^']*)", // 'class' => '...'
+    "\"class\" => \"([^\"]*)", // "class" => "..."
+    "'class' => \"([^\"]*)", // 'class' => "..."
+    "\"class\" => '([^']*)", // "class" => '...'
   ],
   "css.customData": [
     ".vscode/css_custom_data.json"
   ],
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
-    "typescriptreact": "javascript"
+    "typescriptreact": "javascript",
+    "blade": "html"
   }
 }
