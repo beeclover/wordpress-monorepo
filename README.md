@@ -16,7 +16,7 @@ wordpress monorepo
 
 프로젝트 코드베이스 구성
 
-```shell
+```
 $ tree
 .  # https://github.com/beeclover/wordpress-docker 참고
 |-- Makefile
